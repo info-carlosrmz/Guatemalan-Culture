@@ -162,7 +162,7 @@ ul {display: flex;
 
 .source-text a:hover{color: #1B4332;}
 
-.gallery {margin-top: 15rem;}
+.gallery {margin-top: 7rem;}
 
 .about-image,.purpose-text, .target-text, .source-text, .author-text{grid-column: 1/3}
 .about-image {grid-column: 1/3;
