@@ -1,0 +1,174 @@
+html {font-size: 62.5%;}
+@font-face {font-family: Faculty;
+    src: url(fonts/Faculty.ttf);}
+
+@font-face {font-family: Oswald;
+    src: url(fonts/Oswald.ttf);}
+
+h1 {font-family: "Faculty Glyphic", sans-serif;
+    letter-spacing: 0.15rem;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 3.5%;
+    margin-bottom: 0.5%;
+    color: teal;}
+
+h2 {font-family: "Faculty Glyphic", sans-serif;
+    font-size: 1.7em;
+    color: teal;
+    margin-top: 3%;}
+
+h3 {font-family: "Faculty Glyphic", sans-serif;
+    font-weight:550;
+    font-size: 1.5em;
+    margin-top: -1%;}
+
+h4 {font-family: "Oswald", sans-serif;
+    font-style: italic;
+    font-weight: 540; 
+    font-size: 1.2em;
+    margin-top: 2%;}
+
+p {font-family: "Oswald", sans-serif;
+    font-size: 1.3em;}
+.Font {font-size: 1.2em;}
+ul {font-family: "Oswald", sans-serif;
+    font-size: 1.2em;}
+
+header > p:first-child {padding-left: 7.7%;}
+.contact-info {display: flex;
+               column-gap: clamp(15px, 4%, 80px);
+               row-gap: 5px;
+               justify-content: space-between;
+               flex-wrap: wrap;
+               padding-left: 7.5%;
+               padding-right: 7.5%;}
+
+body {background-color: lightgray;
+      margin: 3%;}
+
+#Item {background-color: aliceblue;
+       width: 100%;
+    margin-top: 1.5%;}
+
+#Container {background-color: rgb(202, 234, 239);
+            width:60%; 
+            margin: 0 auto;
+            border-style: solid;
+            border-color: transparent;
+            box-shadow: 5;}
+
+#Container2 {background-color: aliceblue;
+            width:85%; 
+            margin: 0 auto;
+            border-style: solid;
+            border-color: transparent;}
+
+#Iteam2 {margin-top: 3%;}
+.item3 {margin-top: 3.2%;}
+      
+.Title {margin-top:-1.5%;
+         display: inline-block;
+         vertical-align: top;
+         font-style: italic;
+         font-size: 1.1rem;
+         width: 50%;}
+
+.Academic-year {margin-top:-1.5%;
+                display: inline-block;
+                vertical-align: top;
+                text-align: right;
+                font-style: italic;
+                font-size: 1.1rem;
+                width: 49%;}
+
+.Description {margin-top: -1%;
+              margin-bottom: 2%;
+              text-align: justify;}
+
+.Position {margin-top:-1.5%;
+         display: inline-block;
+         vertical-align: top;
+         font-style: italic;
+         font-size: 1.1rem;
+         width: 50%;}
+
+.Years-worked {margin-top:-1.5%;
+                display: inline-block;
+                vertical-align: top;
+                text-align: right;
+                font-style: italic;
+                font-size: 1.1rem;
+                width: 49%;}
+
+.Work-description {margin-top: -1%;
+              margin-bottom: 2%;
+              text-align: justify;}
+
+
+.Project {margin-top:-0.2%;
+         display: inline-block;
+         vertical-align: top;
+         width: 50%;}
+
+.Date {margin-top:-1.5%;
+                display: inline-block;
+                vertical-align: top;
+                text-align: right;
+                font-style: italic;
+                font-size: 1.1rem;
+                width: 49%;}
+
+.Project-description {margin-top: -1%;
+              margin-bottom: 2%;
+              text-align: justify;}
+
+a:link {text-decoration: none; 
+        color: #007AAE}
+a:visited {text-decoration: none; 
+        color: #7B008E;}
+a:hover {text-decoration: none; 
+        color: #C94300;}
+a:active {text-decoration: none; 
+        color:#580101}
+
+
+/* Mobile Page */
+@media (max-width: 769px) {
+
+.contact-info {display: flex;
+               column-gap: clamp(15px, 4%, 80px);
+               row-gap: 5px;
+               justify-content: space-between;
+               flex-wrap: wrap;
+               padding-left: 7.5%;
+               padding-right: 7.5%;}
+
+header {background-color: rgb(202, 234, 239);
+    padding: 2% 4%;}
+
+.Position, .Years-worked,
+.Title, .Academic-year,
+.Project, .Date {display: block;
+                 width: 100%;
+                 text-align: left;
+                 margin-top: 0;}
+
+.Work-description,
+.Description,
+.Project-description {text-align: left;}
+
+#Container2 {width: 95%;}
+
+#Container {width: 100%;
+            margin: 0;
+            box-shadow: none;
+            border: none;
+            background-color: aliceblue;}
+
+body {margin: 0;
+      padding: 0;
+      background-color: aliceblue;}
+}
+
+

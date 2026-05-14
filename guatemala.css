@@ -1,0 +1,532 @@
+/*reset css and base styles like html border-box/inherit, */
+html {box-sizing: border-box;
+        font-size: 62.5%;}
+
+*,*::before, *::after {box-sizing: inherit;}
+
+body, ul, li {margin:0px;
+                padding:0px}
+body {background-color:#F5F0E8;}
+
+img {width:100%}
+
+.wrapper {max-width:1300px;
+          margin:auto;
+           width: 100%;}
+
+header {
+    background-color: #1B4332;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 5%;
+    padding-left: 3%;
+    position: sticky;
+    top: 0;   
+    z-index: 1000;}
+
+header a img {width: auto;
+    max-width: 250px;
+    height: auto;
+    display: block;}
+
+li {list-style-type: none;}
+
+.nav-links li:last-child a {border: 2px solid #5bc8c8;
+                            border-radius: 4px;
+                            padding: 6px 14px;}
+
+.nav-links li:last-child a:hover {background-color: #5bc8c8;
+                                  color: #1a3d2f;}
+
+a {text-decoration: none;
+   color: #00B4D8;}
+
+.nav-links a:hover {color: #FFFFFF;}
+
+
+/*typography*/
+
+@font-face {font-family: Arimo;
+    src: url(../fonts/Arimo_heading.ttf);}
+
+@font-face {font-family: Andika;
+    src: url(../fonts/Andika_subheading.ttf);}
+
+@font-face {font-family: Chiron;
+    src: url(../fonts/Chiron_body.ttf);}
+
+
+
+
+ul {font-family: "Arimo", sans-serif;
+     font-size: 2em;}
+
+h1 {font-family: "Arimo", sans-serif;
+    font-size: 3.5em;
+     text-align: center;
+     margin-top: 10%;}
+
+h2 {font-family: "Andika", sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+    color: #272727;}
+  
+h3 {font-family: "Andika", sans-serif;
+    font-size: 2.5em;}
+
+h4 {font-family: "Andika", sans-serif;
+    font-size: 2em;}
+
+p {font-family: "Chiron", sans-serif;
+    font-size: 1.5em;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    padding-left: 5%;
+    padding-right: 5%;}
+
+.card-1 h4, .card-2 h4,
+.card-3 h4, .card-4 h4,
+.card1 h4, .card2 h4,
+.card3 h4, .card4 h4,
+.text1 h4, .text2 h4,
+.text3 h4, .text4 h4 {margin-top: 0.8rem;
+                      padding: 0 5px;}
+
+.card-1 p, .card-2 p,
+.card-3 p, .card-4 p,
+.card1 p, .card2 p,
+.card3 p, .card4 p,
+.text1 p, .text2 p,
+.text3 p, .text4 p {margin-top: 0.5rem;
+                    padding: 0 5px;}
+
+/*layout- media queries/grid or flex */
+
+
+.grid1 {display: grid;
+          grid-template-columns: 1fr 1fr;
+            gap:2rem;}
+
+ul {display: flex;
+      justify-content: space-between;
+         align-items: flex-end;}
+
+.navbar {position: relative;  /* anchor for the dropdown */
+         display: flex;
+         align-items: center;}
+    
+.introimage {grid-column: 1/2;
+             grid-row: 1/2;
+             margin-top: 1.5em;
+            padding-right: 5%;
+            padding-left: 5%;}
+.introtitles {grid-column: 1/2;
+              grid-row: 1/2;
+               text-align: center;
+                margin-top: 5%;
+                padding-left: 5%;
+                padding-right: 5%;}
+.introtext {grid-column: 1/3;
+              grid-row: 2/3;}
+.introtext p {padding-left: 5%;
+              padding-right: 5%;}
+
+.purpose-text p, .target-text p, 
+.source-text p, .author-text p {padding-left: 5%;
+                                padding-right: 5%;}
+.purpose-text h3, .target-text h3, 
+.source-text h3, .author-text h3 {padding-left: 5%;
+                                padding-right: 5%;}
+
+.floatright {
+    float: right;
+    width: 230px !important;
+    padding-left: 2%;
+    padding-right: 5%;}
+
+
+
+
+.gallery {padding-left: 5%;
+          padding-right: 5%;}
+
+
+.source-text a {color: #0296b4;
+                text-decoration: underline;
+                font-weight: bold;}
+
+.source-text a:hover{color: #1B4332;}
+
+.gallery {margin-top: 15rem;}
+
+.about-image,.purpose-text, .target-text, .source-text, .author-text{grid-column: 1/3}
+.about-image {grid-column: 1/3;
+              padding-top: 6rem;}
+.about-title {text-align: center;
+               grid-column: 1/3;
+               margin-top: -7%;
+               margin-bottom: 5%;
+               padding-left: 5%;
+               padding-right: 5%;}
+
+.about-title-interior {text-align: center;
+                       grid-column: 1/3;
+                       padding-top: 2%;}
+
+.card-1-link, .card-2-link, 
+.card-3-link, .card-4-link,
+.card1-link, .card2-link, 
+.card3-link, .card4-link{text-decoration: none;
+                            color: black;}
+
+.card-1, .card-2,
+.card-3, .card-4, 
+.card1, .card2,
+.card3, .card4 {background: rgba(255, 255, 255, 0.15);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 12px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.4);
+                transition-duration: .3s;
+                transition-timing-function: ease-in;
+                transition-duration: .3s;
+                transition-timing-function: ease-in;
+                padding: 10px;
+                height: 100%;}
+
+.card-1:hover, .card-2:hover, 
+.card-3:hover, .card-4:hover,
+.card1:hover, .card2:hover, 
+.card3:hover, .card4:hover {background: rgba(59, 167, 179, 0.25);
+                               box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3),
+                               inset 0 1px 0 rgba(255, 255, 255, 0.6);
+                               transform: translateY(-5px);}
+
+footer {margin-top: 10rem;
+        padding: 2rem;
+        background-color: #1B4332;
+        font-size: .6rem;
+        color: white;
+        text-align: center;}
+footer p {font-size: 1rem;}
+
+
+/* Mobile Page */
+@media screen and (width >= 320px){
+
+.nav-links {display: none; /* Hidden by default on mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Sits right under the navbar */
+    right: 0;
+    width: 30%;
+    padding: 1rem 0;
+    gap: 15px;
+    text-align: right;
+    padding-right:20px;}
+
+.menu-toggle {display: block; /* Visible by default on mobile */
+    font-size: 4rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #00B4D8;}
+
+/* This is what JS toggles */
+.nav-links.active {display: flex;
+                    background-color:  #1B4332;
+                     width: auto;}
+    
+    .introtitles {grid-column: 1/3;
+                  grid-row: 1/2;}
+    .introimage {grid-column: 1/3;
+                 grid-row: 2/3;}
+    .introtext {grid-column: 1/3;
+                grid-row: 3/4;}
+
+    .about-image, .interior-img, .interior-img2 {grid-column: 1/3;
+                                                 display: block;
+                                                 margin: auto;
+                                                 width: 100%;
+                                                 max-width: 480px;
+                                                 padding-left: 5%;
+                                                 padding-right: 5%;}
+
+    .interior-img-maya,
+    .interior-img-xinca {grid-column: 1/2;
+                         display: block;
+                         margin: auto;
+                         width: 100%;
+                         max-width: 250px;
+                         padding-left: 10%;
+                         padding-right: 10%;}
+
+    .interior-img2-maya,
+    .interior-img2-xinca {grid-column: 2/3;
+                          display: block;
+                          margin: auto;
+                          width: 100%;
+                          max-width: 250px;
+                          padding-left: 10%;
+                          padding-right: 10%;}
+
+    .interior-p1, .interior-p2 {grid-column: 1/3;}
+    .interior-p1-maya,
+    .interior-p1-xinca {grid-column: 2/3;
+                        padding-right: 10%;}
+    .interior-p2-maya,
+    .interior-p2-xinca {grid-column: 1/2;
+                       grid-row: 3/4;
+                       padding-left: 10%;}
+
+    .gallery {display:grid;
+              grid-template-columns: 1fr 1fr;
+               gap:2rem;}
+
+    .gallery p {font-size: 1rem;}
+
+    .card-1 {grid-column: 1/3;
+             grid-row: 1/2;}
+    .card-2 {grid-column: 1/3;
+             grid-row: 2/3;}
+    .card-3 {grid-column: 1/3;
+             grid-row: 3/4;}
+    .card-4 {grid-column: 1/3;
+             grid-row: 4/5;}
+
+    .card1 {grid-column: 1/2;
+           grid-row: 1/2;}
+    .card2 {grid-column: 1/2;
+           grid-row: 2/3;}
+    .card3 {grid-column: 1/2;
+           grid-row: 3/4;}
+    .card4 {grid-column: 1/2;
+           grid-row: 4/5;}
+
+    .text1 {grid-column: 2/3;
+            grid-row: 1/2;
+              width: 100%;}
+    .text2 {grid-column: 2/3;
+             grid-row: 2/3;}
+    .text3 {grid-column: 2/3;
+             grid-row: 3/4;}
+    .text4 {grid-column: 2/3;
+             grid-row: 4/5;}    
+
+                      }
+
+/* Tablet Page */
+
+@media screen and (width >= 481px){
+
+.nav-links {display: none; /* Hidden by default on mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Sits right under the navbar */
+    right: 0;
+    width: 30%;
+    padding: 1rem 0;
+    gap: 15px;
+    text-align: right;
+    padding-right:20px;}
+
+.menu-toggle {display: block; /* Visible by default on mobile */
+    font-size: 4rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #00B4D8;}
+
+/* This is what JS toggles */
+.nav-links.active {display: flex;
+                    background-color:  #1B4332;
+                     width: auto;}
+
+    h1 {font-family: "Arimo", sans-serif;
+    font-size: 4em;}
+
+    .about-title-interior {text-align: center;
+                       grid-column: 1/3;
+                       margin-top: -6%;}
+    
+    .introtitles {grid-column: 1/2;
+              grid-row: 1/2;
+               text-align: center;
+                margin-top: 15%;
+                padding-left: 5%;}                   
+
+    .introimage {grid-column: 2/3;
+                 grid-row: 1/2;
+                 margin-top: 20%;}
+    .introtext {grid-column: 1/3;
+                grid-row: 2/3;}
+
+    .about-image {grid-column: 1/3;
+                    display: block;
+                      margin: auto;
+                        width: 100%;
+                           max-width: 600px;}
+
+    .gallery {display:grid;
+               grid-template-columns: 1fr 1fr;
+                gap:2rem}
+
+    .gallery p {font-size: 1.5rem;}
+
+    .interior-img {grid-column: 1/2;
+                   grid-row: 3/4;
+                     display: block;
+                      margin: auto;
+                        width: 100%;
+                          min-width: 300px;}
+    .interior-img2 {grid-column: 2/3;
+                   grid-row: 4/5;
+                      display: block;
+                      margin: auto;
+                        width: 100%;
+                           min-width: 300px;}
+
+    .interior-p1 {grid-column: 2/3;
+                 grid-row: 3/4;}
+    .interior-p2 {grid-column: 1/2;
+                 grid-row: 4/5;}
+
+    .card-1 {grid-column: 1/2;
+             grid-row: 1/2;}
+    .card-2 {grid-column: 2/3;
+             grid-row: 1/2;}
+    .card-3 {grid-column: 1/2;
+             grid-row: 2/3;}
+    .card-4 {grid-column: 2/3;
+             grid-row: 2/3;}
+
+    .card1 {grid-column: 1/2;
+           grid-row: 1/2;}
+    .card2 {grid-column: 2/3;
+           grid-row: 1/2;}
+    .card3 {grid-column: 1/2;
+           grid-row: 3/4;}
+    .card4 {grid-column: 2/3;
+           grid-row: 3/4;}
+
+    .text1 {grid-column: 1/2;
+            grid-row: 2/3;}
+    .text2 {grid-column: 2/3;
+             grid-row: 2/3;}
+    .text3 {grid-column: 1/2;
+             grid-row: 4/5;}
+    .text4 {grid-column: 2/3;
+             grid-row: 4/5;}
+
+footer p {padding: 2rem;
+        background-color: #1B4332;
+        font-size: 1.5rem;
+        color: white;
+        text-align: center;}   }
+    
+/* Desktop Page */
+
+@media screen and (width >=769px){
+
+.menu-toggle {display: none; /* Hide hamburger on bigger screens */}
+
+header a img {width: auto;
+    max-width: 350px;
+    height: auto;
+    display: block;}
+
+ .nav-links {display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        padding: 0;
+        justify-content: flex-end;
+        gap: 8rem;}
+
+      h1 {font-family: "Arimo", sans-serif;
+    font-size: 6em;}
+
+      h2 {font-family: "Arimo", sans-serif;
+          font-size: 3em;}
+    
+    .introtitles {grid-column: 1/2;
+              grid-row: 1/2;
+               text-align: center;
+                margin-top: 10%;
+                padding-left: 5%;}
+
+    .about-title-interior {text-align: center;
+                           grid-column: 1/3;
+                           margin-top: -8%;}
+                
+    .about-title {text-align: center;
+               grid-column: 1/3;
+               margin-top: -8.5%;
+               margin-bottom: 2%;
+               padding-left: 5%;
+               padding-right: 5%;}
+
+    .introimage {grid-column: 2/3;
+                 grid-row: 1/2;
+                 margin-top: 15%;}
+    
+  .gallery {display:grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;}
+
+  .about-image {grid-column: 1/3;
+                    display: block;
+                      margin: auto;
+                        width: 100%;
+                           max-width: 650px;}
+
+     .interior-img-maya,
+    .interior-img-xinca {grid-column: 1/2;
+                         display: block;
+                         margin: auto;
+                         width: 100%;
+                         max-width: 350px;
+                         padding-left: 10%;
+                         padding-right: 10%;}
+
+    .interior-img2-maya,
+    .interior-img2-xinca {grid-column: 2/3;
+                          display: block;
+                          margin: auto;
+                          width: 100%;
+                          max-width: 350px;
+                          padding-left: 10%;
+                          padding-right: 10%;}
+
+    .card-1 {grid-column: 1/2;}
+    .card-2 {grid-column: 2/3;}
+    .card-3 {grid-column: 3/4;
+               grid-row: 1/2;}
+    .card-4 {grid-column: 4/5;
+                grid-row: 1/2;}
+
+    .card1 {grid-column: 1/2;
+           grid-row: 1/2;}
+    .card2 {grid-column: 2/3;
+           grid-row: 1/2;}
+    .card3 {grid-column: 3/4;
+           grid-row: 1/2;}
+    .card4 {grid-column: 4/5;
+           grid-row: 1/2;}
+
+    .text1 {grid-column: 1/2;
+            grid-row: 2/3;}
+    .text2 {grid-column: 2/3;
+             grid-row: 2/3;}
+    .text3 {grid-column: 3/4;
+             grid-row: 2/3;}
+    .text4 {grid-column: 4/5;
+             grid-row: 2/3;}  }
+
