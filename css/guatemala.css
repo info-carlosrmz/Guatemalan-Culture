@@ -230,7 +230,9 @@ footer p {font-size: 1rem;}
     padding: 1rem 0;
     gap: 15px;
     text-align: right;
-    padding-right:20px;}
+    padding-right:30px;
+    padding-left: 30px;
+    padding-bottom: 30px;}
 
 .menu-toggle {display: block; /* Visible by default on mobile */
     font-size: 4rem;
@@ -335,7 +337,9 @@ footer p {font-size: 1rem;}
     padding: 1rem 0;
     gap: 15px;
     text-align: right;
-    padding-right:20px;}
+    padding-right:30px;
+    padding-left: 30px;
+    padding-bottom: 30px;}
 
 .menu-toggle {display: block; /* Visible by default on mobile */
     font-size: 4rem;
