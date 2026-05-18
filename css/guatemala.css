@@ -149,6 +149,12 @@ ul {display: flex;
 
 .source-text a:hover{color: #1B4332;}
 
+.author-text a {color: #0296b4;
+                text-decoration: none;
+                font-weight: bold;}
+
+.author-text a:hover{color: #1B4332;}
+
 .gallery {margin-top: 7rem;}
 
 .about-image,.purpose-text, .source-text, .author-text{grid-column: 1/3}
