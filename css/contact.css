@@ -36,6 +36,12 @@ ul {font-family: "Oswald", sans-serif;
     font-size: 1.2em;}
 
 header > p:first-child {padding-left: 7.7%;}
+
+.get-in-touch p {font-family: "Oswald", sans-serif;
+                 font-size: 1.3em;
+                 paddign-left: 7.5%;
+                 padding-right: 7.5%;}
+
 .contact-info {display: flex;
                column-gap: clamp(15px, 4%, 80px);
                row-gap: 5px;
