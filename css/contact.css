@@ -1,180 +1,163 @@
-html {font-size: 62.5%;}
 @font-face {font-family: Faculty;
-    src: url(fonts/Faculty.ttf);}
-
+             src: url(../fonts/Faculty.ttf);}
+ 
 @font-face {font-family: Oswald;
-    src: url(fonts/Oswald.ttf);}
+            src: url(../fonts/Oswald.ttf);}
+ 
+.resume-wrapper {background-color: rgb(202, 234, 239);
+                 width: 70%;
+                 margin: 6rem auto;
+                 padding: 4rem 0 0 0;
+                 box-shadow: 0 4px 15px rgba(0,0,0,0.1);}
+ 
+.resume-wrapper h2 {font-family: "Oswald", sans-serif;
+                    font-size: 1.7em;
+                    font-weight: 600;
+                    letter-spacing: 0.15rem;
+                    color: teal;
+                    margin-top: 3%;
+                    margin-bottom: 1rem;
+                    text-align: left;}
+ 
+.resume-wrapper h3 {font-family: "Oswald", sans-serif;
+                    letter-spacing: 0.05rem;
+                    font-size: 1.5em;
+                    margin-top: 1rem;
+                    margin-bottom: 0.3rem;}
+ 
+.resume-wrapper h4 {font-family: "Faculty Glyphic", sans-serif;
+                    font-style: italic;
+                     font-size: 1.2em;
+                      margin-top: 0.5rem;}
+ 
+.resume-wrapper p {font-family: "Faculty Glyphic", sans-serif;
+                   font-size: 1.5em !important;
+                   margin-top: 0.5rem;
+                   margin-bottom: 0.5rem;}
 
-h1 {font-family: "Faculty Glyphic", sans-serif;
-    letter-spacing: 0.15rem;
-    text-align: center;
-    font-size: 3em;
-    margin-top: 3.5%;
-    margin-bottom: 0.5%;
-    color: teal;}
+.resume-wrapper b {font-weight: 700 !important;
+                   font-family: "Faculty Glyphic", sans-serif;}
 
-h2 {font-family: "Faculty Glyphic", sans-serif;
-    font-size: 1.7em;
-    color: teal;
-    margin-top: 3%;}
+.resume-wrapper ul {font-family: "Faculty Glyphic", sans-serif;
+                    font-size: 1.4em !important;                      
+                     display: block !important;
+                      padding-left: 3rem;}
+ 
+.resume-wrapper li {display: list-item !important;
+                    width: 100% !important;
+                    margin-bottom: 0.5rem;}
 
-h3 {font-family: "Faculty Glyphic", sans-serif;
-    font-weight:550;
-    font-size: 1.5em;
-    margin-top: -1%;}
+.resume-wrapper .contact-info {display: flex;
+                               column-gap: clamp(15px, 4%, 80px);
+                               justify-content: center;
+                               flex-wrap: wrap;
+                               padding-left: 7.5%;
+                               padding-right: 7.5%;
+                               margin-bottom: 4rem;}
 
-h4 {font-family: "Oswald", sans-serif;
-    font-style: italic;
-    font-weight: 540; 
-    font-size: 1.2em;
-    margin-top: 2%;}
+.resume-wrapper #Container2 {background-color: aliceblue;
+                             width: 100%;
+                             margin: 1rem 0 0 0;
+                             padding: 3rem 6rem;
+                             padding-bottom: 6rem;}
+ 
+.resume-wrapper .Title,
+.resume-wrapper .Position {display: inline-block;
+                           font-style: italic;
+                           font-size: 1.1rem;
+                           width: 55%;
+                           margin-top: 0.5rem;}
 
-p {font-family: "Oswald", sans-serif;
-    font-size: 1.3em;}
-.Font {font-size: 1.2em;}
-ul {font-family: "Oswald", sans-serif;
-    font-size: 1.2em;}
+.resume-wrapper .Project1,
+.resume-wrapper .Project2 {display: inline-block;
+                           font-size: 1rem;
+                           width: 55%;
+                           margin-top: -0.6rem;}
+ 
+.resume-wrapper .Academic-year,
+.resume-wrapper .Years-worked,
+.resume-wrapper .Date {display: inline-block;
+                       text-align: right;
+                       font-style: italic;
+                       font-size: 1.1rem;
+                       width: 44%;
+                       margin-top: 0.5rem;}
+ 
+.resume-wrapper .Description,
+.resume-wrapper .Work-description,
+.resume-wrapper .Project-description {display: block !important;
+                                      column-count: 1 !important;
+                                      columns: 1 !important;
+                                      margin-top: 0.5rem;
+                                      margin-bottom: 2rem;
+                                      padding-left: 3rem;}
+ 
+.resume-wrapper .Description li,
+.resume-wrapper .Work-description li,
+.resume-wrapper .Project-description li {display: list-item !important;
+                                          width: 100% !important;
+                                          margin-bottom: 0.5rem;}
+ 
+.resume-wrapper #Iteam2 {margin-top: 3%;}
 
-header > p:first-child {padding-left: 7.7%;}
+ 
+.resume-wrapper #Iteam2 ul li {list-style-type: disc !important;
+                               display: list-item !important;}
+ 
+.resume-wrapper #Container2 > ul li {list-style-type: disc !important;
+                                     display: list-item !important;
+                                     margin-bottom: 0.5rem;}
+ 
+.resume-wrapper .item3 {margin-top: 3.2%;}
+ 
+.resume-wrapper a:link {text-decoration: none;
+                        color: #007AAE;}
+ 
+.resume-wrapper a:visited {text-decoration: none;
+                           color: #7B008E;}
+ 
+.resume-wrapper a:hover {text-decoration: none;
+                         color: #C94300;}
+ 
+.resume-wrapper a:active {text-decoration: none;
+                          color: #580101;}
+ 
+/* MOBILE + Tablet*/
 
-.get-in-touch p {font-family: "Oswald", sans-serif;
-                 font-size: 1.3em;
-                 padding-left: 7.5%;
-                 padding-right: 7.5%;}
-
-.contact-info {display: flex;
-               column-gap: clamp(15px, 4%, 80px);
-               row-gap: 5px;
-               justify-content: space-between;
-               flex-wrap: wrap;
-               padding-left: 7.5%;
-               padding-right: 7.5%;}
-
-body {background-color: lightgray;
-      margin: 3%;}
-
-#Item {background-color: aliceblue;
-       width: 100%;
-    margin-top: 1.5%;}
-
-#Container {background-color: rgb(202, 234, 239);
-            width:60%; 
-            margin: 0 auto;
-            border-style: solid;
-            border-color: transparent;
-            box-shadow: 5;}
-
-#Container2 {background-color: aliceblue;
-            width:85%; 
-            margin: 0 auto;
-            border-style: solid;
-            border-color: transparent;}
-
-#Iteam2 {margin-top: 3%;}
-.item3 {margin-top: 3.2%;}
-      
-.Title {margin-top:-1.5%;
-         display: inline-block;
-         vertical-align: top;
-         font-style: italic;
-         font-size: 1.1rem;
-         width: 50%;}
-
-.Academic-year {margin-top:-1.5%;
-                display: inline-block;
-                vertical-align: top;
-                text-align: right;
-                font-style: italic;
-                font-size: 1.1rem;
-                width: 49%;}
-
-.Description {margin-top: -1%;
-              margin-bottom: 2%;
-              text-align: justify;}
-
-.Position {margin-top:-1.5%;
-         display: inline-block;
-         vertical-align: top;
-         font-style: italic;
-         font-size: 1.1rem;
-         width: 50%;}
-
-.Years-worked {margin-top:-1.5%;
-                display: inline-block;
-                vertical-align: top;
-                text-align: right;
-                font-style: italic;
-                font-size: 1.1rem;
-                width: 49%;}
-
-.Work-description {margin-top: -1%;
-              margin-bottom: 2%;
-              text-align: justify;}
-
-
-.Project {margin-top:-0.2%;
-         display: inline-block;
-         vertical-align: top;
-         width: 50%;}
-
-.Date {margin-top:-1.5%;
-                display: inline-block;
-                vertical-align: top;
-                text-align: right;
-                font-style: italic;
-                font-size: 1.1rem;
-                width: 49%;}
-
-.Project-description {margin-top: -1%;
-              margin-bottom: 2%;
-              text-align: justify;}
-
-a:link {text-decoration: none; 
-        color: #007AAE}
-a:visited {text-decoration: none; 
-        color: #7B008E;}
-a:hover {text-decoration: none; 
-        color: #C94300;}
-a:active {text-decoration: none; 
-        color:#580101}
-
-
-/* Mobile Page */
 @media (max-width: 769px) {
+ 
+    .resume-wrapper {width: 100%;
+                     margin: 2rem auto;
+                     padding: 1rem 0 0 0;}
+ 
+    .resume-wrapper #Container2 {background-color: aliceblue;
+                                 width: 100%;
+                                 margin: 1rem 0 0 0;
+                                 padding: 3rem 6rem;}
+ 
+    .resume-wrapper .Title,
+    .resume-wrapper .Position,
+    .resume-wrapper .Project,
+    .resume-wrapper .Academic-year,
+    .resume-wrapper .Years-worked,
+    .resume-wrapper .Date {display: block;
+                           width: 100%;
+                           text-align: left;}
+ 
+    .resume-wrapper .contact-info {align-items: center;
+                                   padding-left: 5%;
+                                   padding-right: 5%;}
+ 
+    .resume-wrapper li {text-align: left;}
+ 
+    .resume-wrapper .Description,
+    .resume-wrapper .Work-description,
+    .resume-wrapper .Project-description {text-align: left;
+                                          padding-left: 1.5rem;}
+ 
+    .resume-wrapper ul {padding-left: 1.5rem;}
 
-.contact-info {display: flex;
-               column-gap: clamp(15px, 4%, 80px);
-               row-gap: 5px;
-               justify-content: space-between;
-               flex-wrap: wrap;
-               padding-left: 7.5%;
-               padding-right: 7.5%;}
 
-header {background-color: rgb(202, 234, 239);
-    padding: 2% 4%;}
-
-.Position, .Years-worked,
-.Title, .Academic-year,
-.Project, .Date {display: block;
-                 width: 100%;
-                 text-align: left;
-                 margin-top: 0;}
-
-.Work-description,
-.Description,
-.Project-description {text-align: left;}
-
-#Container2 {width: 95%;}
-
-#Container {width: 100%;
-            margin: 0;
-            box-shadow: none;
-            border: none;
-            background-color: aliceblue;}
-
-body {margin: 0;
-      padding: 0;
-      background-color: aliceblue;}
 }
 
 
